@@ -1,1 +1,23 @@
-/*    /index.html   200
+# Netlify / Cloudflare Pages routing (same as vercel.json): legacy 301s, real routes served by the
+# app, everything else a genuine 404 (no soft-404 of the homepage).
+/capabilities  /capabilities/medical  301
+/solutions  /capabilities/medical  301
+/solutions/it  /capabilities/government-technology  301
+/solutions/medical  /capabilities/medical  301
+/solutions/defence  /capabilities/defence  301
+/  /index.html  200
+/about  /index.html  200
+/contact  /index.html  200
+/partners  /index.html  200
+/who-we-serve  /index.html  200
+/staffing-solutions  /index.html  200
+/government-procurement  /index.html  200
+/capabilities/medical  /index.html  200
+/capabilities/essential-supply  /index.html  200
+/capabilities/defence  /index.html  200
+/capabilities/government-technology  /index.html  200
+/legal/privacy  /index.html  200
+/legal/terms  /index.html  200
+/legal/accessibility  /index.html  200
+/legal/supplier-code  /index.html  200
+/*  /404.html  404
